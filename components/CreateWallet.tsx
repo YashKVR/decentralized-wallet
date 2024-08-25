@@ -10,7 +10,7 @@ const CreateWallet = () => {
     const [keyPhrase, setKeyPhrase] = useState([""])
 
     return (
-        <div className='flex flex-col justify-center items-center h-[90dvh] w-full'>
+        <div className='flex flex-col justify-center items-center h-[100dvh] w-full'>
             {
                 !clicked ? <Button variant="primary" onClick={async () => {
                     let generatedKeyPhrase = await generateKeyPhrase()
